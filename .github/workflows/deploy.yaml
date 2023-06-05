@@ -2,9 +2,9 @@ name: Deployment
 run-name: v100
 on: [workflow_dispatch]
 jobs:
-  deploy:
+  kartoffel:
     runs-on: ubuntu-latest
-    environment: non-existant
+    environment: something
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
